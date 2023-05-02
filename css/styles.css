@@ -260,6 +260,7 @@ body {
     ),
     url('../images/hero/people-office.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -281,6 +282,9 @@ body {
 /* ==================== FEATURES ==================== */
 
 .background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 264px;
   height: 112px;
   background: var(--secondary-white-color);
@@ -344,10 +348,12 @@ body {
   background-color: var(--primary-white-color);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-card-text {
-  padding: 32px 16px;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,13 +394,15 @@ body {
 }
 
 .social-list-icon {
-  fill: var(--primary-white-color);
+  fill: var(--secondary-white-color);
 }
 
 /* ==================== OUR TEAM ==================== */
 
 /* ==================== CUSTOMERS ==================== */
-
+.customers-title {
+  line-height: 1.1;
+}
 .customers-list {
   display: flex;
   justify-content: center;
@@ -434,6 +442,7 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-container {
@@ -462,6 +471,7 @@ body {
   font-weight: 500;
   margin-bottom: 16px;
   width: inherit;
+  color: var(--primary-white-color);
 }
 
 .footer-social-list {
@@ -502,15 +512,21 @@ body {
   width: calc((100% - 48px) / 3);
 }
 
-.apps-item:hover .apps-text-content,
+/* .apps-item:hover .apps-text-content,
 .apps-item:focus .apps-text-content {
   border-color: var(--secondary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
 .apps-link {
   display: block;
+}
+
+.apps-link:hover,
+.apps-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .apps-desc {
